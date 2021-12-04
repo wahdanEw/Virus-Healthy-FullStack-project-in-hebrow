@@ -1,0 +1,13 @@
+software requirements for php Application
+
+MAMP:
+Apache Server
+MySQL Server
+Cloud
+
+lanuage:
+PHP
+Javascript
+JQuery
+css3
+HTML5

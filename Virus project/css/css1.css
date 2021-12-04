@@ -1,0 +1,722 @@
+:root {
+  --white: white;
+}
+body {
+  /* background-image: url("https://cdn.georgeinstitute.org/sites/default/files/2020-03/covid.jpg"); */
+  background-image: url("../images/covid.jpg");
+  background-size: auto;
+  /* background-repeat: no-repeat; */
+  position: relative;
+}
+.username_style{
+  font-family:cursive;
+  color: #ceb3e4;
+  font-size: 30px;
+  text-decoration: underline;
+}
+.menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+ul {
+  list-style-type: none;
+  top: 0px;
+  padding-right: 310px;
+  position: fixed;
+  display: flex; /*display:flex => to start flexible box*/
+  flex-flow: row wrap; /*flex-flow: [flex-direction]+[flex-wrap]*/
+}
+ul li {
+  /* display: inline-block; */ /* no need because we using in ul => flex*/
+  font-size: 22px;
+  font-style: italic;
+  z-index: 1;
+}
+ul li a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.9s ease;
+}
+ul li a:hover,
+ul li.active a {
+  background-color: #fff;
+  color: #000;
+}
+/* @media (min-width: 1000px) and (max-width: 1400px) {
+  ul li a:hover,
+  ul li.active a {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+} */
+.date_style{
+  position: relative;
+  font-size: 22px;
+  font-family: cursive;
+  bottom: 23px;
+  right: 875px;
+  width: 502px;
+  color:rgb(255, 255, 255);
+  border: 1px solid transparent;
+  transition: 0.9s ease;
+}
+.corona_vid_place {
+  position: relative;
+  float: left;
+  height: 0px;
+  right: 0px;
+  bottom: 230px;
+}
+.corona_vid_live {
+  position: relative;
+  top: 230px;
+  left: 50px;
+  width: 460px;
+  height: 215px;
+}
+.in {
+  border: 3px solid rgb(2, 1, 1);
+}
+.in:focus {
+  border-color: rgb(180, 7, 7);
+  outline: none;
+}
+/*Registry+btn = Registry button כפתור ההרשמה בעמוד הראשי*/
+.logregout{
+  margin: 10px; /* or what ever */
+  width: 100px;
+}
+.logout{
+  top: 47px;
+  font-size: 150%;
+  border: 1px solid #fff;
+  border-radius: 22px 0px;
+  padding: 5px 30px;
+  color: rgb(255, 16, 16);
+  text-decoration: none;
+  transition: 0.9s ease;
+}
+.logout:hover{
+  background-color: rgb(3, 2, 2);
+  color: rgb(253, 253, 253);
+}
+.btn_Registry_place {
+  float: right;
+  top: 23px;
+  font-size: 150%;
+  font-weight: bold;
+  font-style: italic;
+}
+.btn_login_place{
+  float: right;
+  top: 40px;
+  font-size: 150%;
+  font-weight: bold;
+  font-style: italic;
+}
+.btn_login{
+  padding: 5px 39px;
+} 
+.btn_registry{
+  padding: 5px 30px;
+}
+.btn_registry, 
+.btn_login{
+  top: 106px;
+  border: 1px solid #fff;
+  border-radius: 22px 0px;
+  color: white;
+  text-decoration: none;
+  transition: 0.9s ease;
+}
+.btn_registry:hover, 
+.btn_login:hover {
+  background-color: #fff;
+  color: #000;
+}
+h1 {
+  left: 911px;
+  top: 166px;
+  font-size: 50px;
+  position: absolute;
+  font-style: italic;
+  color: white;
+}
+#text {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  top: 200px;
+  position: relative;
+}
+/* .test {
+	word-break: break-word;
+} */
+.label_txt_area {
+  position: relative;
+  top: 180px;
+  margin-right: 450px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+}
+textarea {
+  top: 181px;
+  position: relative;
+  margin-right: 588px;
+  padding-bottom: 50px;
+  border: 3px solid #cccccc;
+  background-color: #324b69;
+  width: 400px;
+  height: 50px;
+  resize: none;
+}
+.commet-txtarea-parent {
+  position: relative;
+  top: 180px;
+  right: 46px;
+  padding-right: 700px;
+}
+.commet-txtarea-son {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 60px;
+  background-color: #282828;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.user-message-Forcomment{
+  position: relative;
+  left: -474px;
+  top: 140px;
+  width: 490px;
+  padding-right: 2px;
+  color: #020202;
+  background-color: #ffffff6b;
+  font-weight: 800;
+  text-decoration:underline;
+  font-family: serif;
+}
+.username-textarea-style{
+  color: #ceb3e4;
+  position: relative;
+  font-weight: bold;
+  top: -10px;
+  font-family: cursive;
+}
+.comment-box{
+  position: relative;
+  width: 373px;
+  height: 46px;
+  padding: 20px;
+  right: 589px;
+  top: 140px;
+  margin-bottom: 4px;
+  background-color: #324b69;
+  border-radius: 4px;
+  overflow: auto;
+}
+.comment-box p{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #282828;
+  font-weight: 100;
+  left: 167px;
+  margin: 0px;
+  word-wrap: break-word;
+}
+.edit-form{
+  left: 0px;
+}
+.delete-form{
+  left: 60px;
+}
+.edit-form,
+.delete-form{
+  position: absolute;
+  top: 0px;
+}
+.edit-form button{
+  width: 40px;
+  height: 20px;
+}
+.delete-form button{
+  width: 55px;
+  height: 20px;
+}
+.edit-form button,
+.delete-form button{
+  color: #282828;
+  background-color: #fff;
+  border-radius: 2em;
+  opacity: 0.7;
+}
+.edit-form button:hover,
+.delete-form button:hover{
+  opacity: 1;
+}
+.edit-textarea{
+  position: relative;
+}
+.submit_edit_txtarea_son{
+  position: relative;
+  right: 770px;
+  top: 170px;
+  width: 100px;
+  height: 30px;
+  background-color: #282828;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+/*##########---->login page + (forgetpassw buttn + login Submit)<----#########*/
+.login_page_place {
+  text-align: center;
+  font-size: 140%;
+}
+.button_forgot_passwd {
+  text-decoration: none;
+  padding: 5px 30px;
+  position: relative;
+  right: -129px;
+  top: 40px;
+  font-style: italic;
+  border: 1px solid #fff;
+  color: white;
+  transition: 0.9s ease;
+}
+.button_forgot_passwd:hover {
+  background-color: #fff;
+  color: #000;
+}
+.usrer_passwd_Label {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  background-color: FloralWhite;
+}
+.login_submit {
+  height: 20px;
+  width: 80px;
+  font-weight: bold;
+}
+.login_submit:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+}
+/* #########----->forgot password page----######## */
+.forgot_page_place {
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+  font-size: 150%;
+}
+.fgp_Label {
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  display: inline-block; /**/
+  background-color: FloralWhite;
+}
+.input_email_place {
+  padding: 10px;
+}
+.fgp_email_input {
+  height: 16px;
+  width: 200px;
+  border: 3px solid;
+  border-style: ridge;
+}
+.send_submit {
+  height: 20px;
+  /* width: 80px; */
+  width: auto;
+  font-weight: bold;
+}
+/*##########---->Rergistry page----#########*/
+body.background_image {
+  background-image: url("../images/covid2.jpg"); /*https://d2r55xnwy6nx47.cloudfront.net/uploads/2019/04/Virus_1300_HP.jpg*/
+  font-size: 170%;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+#alert,
+#alert2,
+#alert3,
+#alert4,
+#alert5,
+#alert6,
+#alert7{
+  visibility: hidden;
+  position: relative;
+  background-color:#cf6b547d;
+  color: #740000;
+  border: #abababd1 2px solid;
+  border-radius: 4px 2px 2px 35px;
+  opacity: 0.8;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  padding: 1px;
+  bottom: -4px;
+  right: 558px;
+}
+.alert,
+.alert2,
+.alert3,
+.alert4,
+.alert5,
+.alert6,
+.alert7 {background-color: #ff9800;}
+
+#alert {
+  width: 209px;
+}
+#alert2 {
+  width: 232px;
+}
+#alert3 {
+  width: 275px;
+}
+#alert4 {
+  width: 169px;
+}
+#alert5 {
+  width: 246px;
+}
+#alert6 {
+  font-size: 18px;
+  width: 764px;
+  right: 290px;
+}
+#alert7 {
+  width: 264px;
+  right: 562px;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  color: black;
+}
+.swal2-popup{
+  left: 383px;
+}
+.registry_button,
+.reset_button {
+  height: 25px;
+  width: 100px;
+}
+.button_place_home {
+  float: right;
+  float: right;
+  position: relative;
+  bottom: 20px;
+  right: 5px;
+}
+.button_home {
+  text-decoration: none;
+  padding: 10px 30px;
+  font-style: italic;
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-radius: 20px 20px;
+  box-shadow: 0px 1px 20px 0px rgb(46 61 73),
+    0px 1px 20px 0px rgb(114, 122, 119), 0px 1px 20px 0px rgb(150, 150, 190);
+  color: #000;
+  background-color: white;
+  transition: 0.9s ease;
+}
+.button_home:hover {
+  background-color: #fff;
+  color: #000;
+}
+/*##########---->KindsLearn page<----#########*/
+.kids_Page {
+  background-image: url("../images/virus.jpg"); /*https://img.haarets.co.il/img/1.8699013/296813522.jpg?precrop=2192,1272,x8,y143&height=698&width=1200*/
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.kids_menu li {
+  background-color: rgb(67, 155, 165); /*rgb(146, 199, 122)*/
+}
+.imgkids {
+  width: 600px;
+  margin-top: 50px;
+}
+.vid1 {
+  width: 600px;
+  height: 515px;
+  border-width: 5px;
+  margin-right: 30%;
+}
+.vid2 {
+  width: 600px;
+  height: 515px;
+  border-width: 5px;
+  margin-right: 60%;
+}
+/*##########---->Virus History + vids Page<----#########*/
+.select_place {
+  text-decoration: none;
+  padding-right: 80px;
+  padding-top: 50px;
+  transition: 0.9s ease;
+}
+.label_select {
+  font-size: 24px;
+  font-style: italic;
+  background-color: rgba(243, 243, 243, 0);
+  color: lightskyblue;
+  border: 2px solid rgba(255, 255, 255, 0.603);
+}
+#virus_select {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+#virus_select2 {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+.selected_vid_style{
+	left: 185px;
+	position: relative;
+}
+#selected_video > .selected_vid_style {
+  width: 900px;
+  height: 500px;
+  top: auto;
+  transform: translate(-50%, 30%);
+  border: #cccccc solid 1px;
+  background-image: url("../images/vidoload.jpg");
+  background-size: cover;
+}
+#selected_history {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  color: white;
+  font-size: 20px;
+  padding: 20px 16px 10px 10px;
+}
+#selected_history h2 {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(54, 5, 5);
+  padding: 20px 10px;
+}
+
+/*##########---->Virus Protect Page----#########*/
+.text_style {
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+}
+#h1_style {
+  top: 100px;
+  left: 380px;
+  text-decoration: underline;
+  color: rgb(201, 12, 12);
+}
+#text_style2 {
+  font-size: 20px;
+  padding-top: 170px;
+}
+h3,
+h2 {
+  padding-right: 12em;
+  font-size: 28px;
+  color: rgb(54, 5, 5);
+  text-decoration: underline;
+}
+section a {
+  color: rgb(165, 81, 81);
+}
+section a:hover {
+  color: rgb(138, 135, 135);
+}
+section a:visited {
+  color: blue;
+}
+.end_page_vid {
+  width: 1000px;
+  height: 515px;
+  border-width: 5px;
+  margin-right: 18.5%;
+}
+/*##########---->About us page----#########*/
+.my_text {
+  padding: 200px 0px 0px 600px;
+  font-style: italic;
+  font-weight: bold;
+  word-spacing: 3px; /*specs between words*/
+  font-size: 22px;
+  color: white;
+}
+.my_text::first-letter {
+  /*Psedo emelments(selection)*/
+  display: inline-block;
+  color: black;
+  font-size: 60px;
+}
+.selection_p::selection {
+  background-color: black;
+  color: yellow;
+}
+.h1_a {
+  top: 216px;
+  right: 404px;
+  width: 400px;
+  text-decoration: underline;
+  text-transform: capitalize; /*make first letters capital*/
+  letter-spacing: 3px; /*specs between letters*/
+  text-shadow: 1px -9px 1px rgb(70 87 133);
+}
+p {
+  font-size: 24px;
+  padding-right: 34%;
+  width: 760px;
+}
+.top_arrow,
+.right_arrow,
+.bottom_arrow,
+.left_arrow {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 15px;
+  position: absolute;
+}
+.arrow_parent {
+  position: relative;
+	top: 125px;
+	right: -261px;
+}
+.left_arrow {
+  border-color: transparent transparent transparent black;
+  right: 930px;
+  bottom: 55px;
+}
+.right_arrow {
+  border-color: transparent green transparent transparent;
+  right: 655px;
+  bottom: 55px;
+}
+.top_arrow {
+  border-color: red transparent transparent transparent;
+  right: 793px;
+  bottom: 100px;
+}
+.bottom_arrow {
+  border-color: transparent transparent rgb(59, 161, 165) transparent;
+  right: 793px;
+  bottom: 20px;
+}
+footer {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(28, 12, 245);
+}
+.logo2 {
+  height: 10em;
+  width: 10em;
+  padding-right: 88%;
+}
+/* congfiguration Page */
+.congfbutton{
+  left: -1px;
+  top: 46px;
+  position: absolute;
+}
+.congfbtn{
+  font-style: italic;
+  font-weight: 500;
+  background-color: #364e6a;
+  color: white; 
+  border: 1px solid #fff;
+  border-radius: 22px 22px; 
+  padding: 4px 6px; 
+  cursor: pointer; 
+  transition: 0.9s ease;
+}
+.congfbtn:hover{
+  background-color: white;
+  color: black;
+}
+.conlogo{
+  position: absolute;
+  bottom: 0;
+  left: -106px;
+  top: -159px;
+  height: 40px;
+  width: 40px;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 130px;
+}
+.dropdown {
+  float: left;
+  top: 27px;
+  right: -104px;
+  bottom: 662px;
+  position: relative;
+  z-index: 1;
+}
+.dropdown-content {
+  font-size: 20px;
+  font-family:cursive;
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+}
+  .dropdown-content a{
+    margin-top: 5px;
+    color: #fff;
+    padding: 8px 12px;
+    border: 1px solid #fff;
+    border-radius: 22px 22px;
+    transition: 0.9s ease;
+    display: block;
+    
+  }
+.dropdown-content a:hover {
+  background-color: #000;
+	color: #fff;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
