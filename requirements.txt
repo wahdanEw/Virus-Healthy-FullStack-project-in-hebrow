@@ -1,5 +1,7 @@
 software requirements for php Application
 
+Visual Stdio Code
+
 MAMP:
 Apache Server
 MySQL Server
